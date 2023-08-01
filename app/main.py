@@ -1,10 +1,9 @@
-import tkinter as tk
+from tkinter import*
 from controller.controlador_principal import ControladorPrincipal
 
-root = tk.Tk()
+root = Tk()
 root.title("Recitales musicales ")
 controlador = ControladorPrincipal(root)
-
 
 
 
