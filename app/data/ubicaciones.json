@@ -1,32 +1,32 @@
 [
     {
         "id" : 1,
-        "latitud": -34.59378479622863,
-        "longitud": -58.44798215936948,
-        "direccion": "Humboldt 450, C1414 CABA"
+        "coordenadas": [-34.59378479622863, -58.44798215936948],
+        "direccion": "Humboldt 450, C1414 CABA",
+        "nombre": "Movistar Arena (formerly Buenos Aires Arena)"
     },
     {
         "id" : 2,
-        "latitud": -33.459904921135944,
-        "longitud": -70.66185124191993,
-        "direccion": "Tupper 1941, Santiago, Región Metropolitana, Chile"
+        "coordenadas": [-33.459904921135944, -70.66185124191993],
+        "direccion": "Tupper 1941, Santiago, Región Metropolitana, Chile",
+        "nombre": "MOVISTAR ARENA, SANTIAGO, CH"
     },
     {
         "id" : 3,
-        "latitud": 36.10426223404778,
-        "longitud": -115.1747316461743,
-        "direccion": "3770 S Las Vegas Blvd, Las Vegas, NV 89109, Estados Unidos"
+        "coordenadas": [36.10426223404778, -115.1747316461743],
+        "direccion": "3770 S Las Vegas Blvd, Las Vegas, NV 89109, Estados Unidos",
+        "nombre": "DOLBY LIVE AT PARK MGM, LAS VEGAS, NV"
     },
     {
         "id" : 4,
-        "latitud": 33.808016951978765,
-        "longitud": -117.87651161928322,
-        "direccion": "2695 E Katella Ave, Anaheim, CA 92806, Estados Unidos"
+        "coordenadas": [33.808016951978765, -117.87651161928322],
+        "direccion": "2695 E Katella Ave, Anaheim, CA 92806, Estados Unidos",
+        "nombre": "HONDA CENTER, ANAHEIM, CA"
     },
     {
         "id" : 5,
-        "latitud": 32.75548918446927,
-        "longitud": -117.21218318863934,
-        "direccion": "3500 Sports Arena Blvd, San Diego, CA 92110, Estados Unidos"
+        "coordenadas": [32.75548918446927, -117.21218318863934],
+        "direccion": "3500 Sports Arena Blvd, San Diego, CA 92110, Estados Unidos",
+        "nombre": "PECHANGA ARENA, SAN DIEGO, CA"
     }
 ]
