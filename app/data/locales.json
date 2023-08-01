@@ -1,32 +1,27 @@
 [
     {
-        "nombre": "El Buen Gusto",
-        "imagen": "image_1.png",
+        "nombre": "Movistar Arena (formerly Buenos Aires Arena)",
+        "imagen": "image_1.jpg",
         "id_ubicacion": 1
     },
     {
-        "nombre": "La Monumental",
-        "imagen": "image_2.png",
+        "nombre": "MOVISTAR ARENA, SANTIAGO, CH",
+        "imagen": "Movistar_arena_CHILE.jpg",
         "id_ubicacion": 2
     },
     {
-        "nombre": "La 12",
-        "imagen": "image_3.png",
+        "nombre": "DOLBY LIVE AT PARK MGM, LAS VEGAS, NV",
+        "imagen": "dolby_live.webp.jpg",
         "id_ubicacion": 3
     },
     {
-        "nombre": "Donatello",
-        "imagen": "image_4.png",
+        "nombre": "HONDA CENTER, ANAHEIM, CA",
+        "imagen": "honda.center.jpg",
         "id_ubicacion": 4
     },
     {
-        "nombre": "Lo del Negro Copa",
-        "imagen": "image_5.png",
+        "nombre": "PECHANGA ARENA, SAN DIEGO, CA",
+        "imagen": "PASD_EXTERIOR_2019.jpg",
         "id_ubicacion": 5
-    },
-    {
-        "nombre": "Pizza Mara",
-        "imagen": "image_6.png",
-        "id_ubicacion": 6
     }
 ]
