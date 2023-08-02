@@ -1,9 +1,9 @@
-from tkinter import*
+import tkinter as tk
 from controller.controlador_principal import ControladorPrincipal
 
 from tkintermapview import TkinterMapView
 
-root = Tk()
+root = tk.Tk()
 root.title("Recitales musicales")
 controlador = ControladorPrincipal(root)
 

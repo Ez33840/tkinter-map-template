@@ -1,13 +1,13 @@
 from views.vista_principal import VistaPrincipal
-from models.evento import Evento
+from models.local import Local
 from models.ubicacion import Ubicacion
 from PIL import Image, ImageTk
 
 class ControladorPrincipal:
     def __init__(self, root):
         self.vista = VistaPrincipal(root, self.seleccionar_local, seleccionar_ubicacion)
-        self.locales = Evento.cargar_locales("tkinter-map-template/app/data/evento.json")
-        self.ubicaciones = Ubicacion.cargar_ubicaciones("tkinter-map-template/app/data/ubicaciones.json")
+        self.locales = Local.cargar_locales("app/data/locales.json")
+        self.ubicaciones = Ubicacion.cargar_ubicaciones("app/data/ubicaciones.json")
         self.marcadores = []
         self.imagenes = []
 
@@ -21,14 +21,13 @@ class ControladorPrincipal:
         
     def cargar_imagenes(self):
         for local in self.locales:
-            imagen = ImageTk.PhotoImage(Image.open(f"tkinter-map-template/app/views/images/{local.imagen}").resize((200, 200)))
+            imagen = ImageTk.PhotoImage(Image.open(f"app/views/images/{local.imagen}").resize((200, 200)))
             self.imagenes.append(imagen)
 
     def cargar_marcadores(self):
         for ubicacion, local in zip(self.ubicaciones, self.locales):
             imagen = self.imagenes[ubicacion.id - 1]
-            latitud, longitud = ubicacion.coordenadas
-            marcador = self.vista.agregar_marcador_mapa(latitud, longitud, local.nombre, imagen)
+            marcador = self.vista.agregar_marcador_mapa(ubicacion.latitud, ubicacion.longitud, local.nombre, imagen)
             marcador.hide_image(True)
             self.marcadores.append(marcador)
 
@@ -47,8 +46,7 @@ class ControladorPrincipal:
                 break
         
         # Centra el mapa en la ubicación seleccionada
-        latitud, longitud = ubicacion_seleccionada.coordenadas
-        self.vista.mapa.set_position(latitud, longitud)
+        self.vista.mapa.set_position(ubicacion_seleccionada.latitud, ubicacion_seleccionada.longitud)
 
         print(f"Latitud: {ubicacion_seleccionada.latitud}, Longitud: {ubicacion_seleccionada.longitud}")
 

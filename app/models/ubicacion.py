@@ -1,11 +1,11 @@
 import json
 
 class Ubicacion:
-    def __init__(self, id, coordenadas, direccion, nombre):
+    def __init__(self, id, latitud, longitud, direccion):
         self.id = id
-        self.coordenadas = coordenadas
+        self.latitud = latitud
+        self.longitud = longitud
         self.direccion = direccion
-        self.nombre = nombre
 
     def a_json(self):
         return json.dumps(self.__dict__)
@@ -14,7 +14,7 @@ class Ubicacion:
     def de_json(cls, datos_json):
         datos = json.loads(datos_json)
         return cls(**datos)
-
+    
     @staticmethod
     def cargar_ubicaciones(archivo_json):
         with open(archivo_json, "r") as archivo:

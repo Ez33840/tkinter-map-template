@@ -1,10 +1,5 @@
 [
     {   "nombre": "Movistar Arena (formerly Buenos Aires Arena)",
-        "artista":"Luis Miguel",
-        "genero":"romantico",
-        "hora_inicio":"2023-07-04T18:00:00",
-        "hora_fin":"2023-08-05T23:00:00",
-        "descripcion": "Luis Miguel en Argentina",
         "imagen": "image_1.jpg",
         "id_ubicacion": 1
     },
