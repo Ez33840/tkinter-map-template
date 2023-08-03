@@ -1,0 +1,57 @@
+[
+    {   "id": 1,
+        "nombre": "Movistar Arena (formerly Buenos Aires Arena)",
+        "artista":"Luis Miguel",
+        "genero":"romanticos",
+        "id_ubicacion": 1,
+        "hora_inicio":"2023-08-06T09:00:00",
+        "hora_fin":"2023-08-06T12:00:00",
+        "descripcion": "Tour",
+        "imagen": "image_1.jpg"
+        
+    },
+    {
+        "id": 2,
+        "nombre": "MOVISTAR ARENA, SANTIAGO, CH",
+        "artista":"Luis Miguel",
+        "genero":"romanticos",
+        "id_ubicacion": 2,
+        "hora_inicio":"2023-08-21T09:00:00",
+        "hora_fin":"2023-08-21T12:00:00",
+        "descripcion": "Tour",
+        "imagen": "Movistar_arena_CHILE.jpg"
+    },
+    {
+        "id": 3,
+        "nombre": "DOLBY LIVE AT PARK MGM, LAS VEGAS, NV",
+        "artista":"Luis Miguel",
+        "genero":"romanticos",
+        "id_ubicacion": 3,
+        "hora_inicio":"2023-09-15T09:00:00",
+        "hora_fin":"2023-09-15T12:00:00",
+        "descripcion": "Tour",
+        "imagen": "dolby_live.webp.jpg"
+    },
+    {
+        "id": 4,
+        "nombre": "HONDA CENTER, ANAHEIM, CA",
+        "artista":"Luis Miguel",
+        "genero":"romanticos",
+        "id_ubicacion": 4,
+        "hora_inicio":"2023-09-17T09:00:00",
+        "hora_fin":"2023-09-17T12:00:00",
+        "descripcion": "Tour",
+        "imagen": "honda.center.jpg"
+    },
+    {
+        "id": 5,
+        "nombre": "PECHANGA ARENA, SAN DIEGO, CA",
+        "artista":"Luis Miguel",
+        "genero":"romanticos",
+        "id_ubicacion": 5,
+        "hora_inicio":"2023-09-21T09:00:00",
+        "hora_fin":"2023-09-21T12:00:00",
+        "descripcion": "Tour",
+        "imagen": "PASD_EXTERIOR_2019.jpg"
+    }
+]
