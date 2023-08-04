@@ -6,8 +6,8 @@ from PIL import Image, ImageTk
 class ControladorPrincipal:
     def __init__(self, root):
         self.vista = VistaPrincipal(root, self.seleccionar_local, seleccionar_ubicacion)
-        self.locales = Local.cargar_locales("app/data/locales.json")
-        self.ubicaciones = Ubicacion.cargar_ubicaciones("app/data/ubicaciones.json")
+        self.locales = Local.cargar_locales("/Users/maxi232/Desktop/PROYECTO/tkinter-map-template/app/data/locales.json")
+        self.ubicaciones = Ubicacion.cargar_ubicaciones("/Users/maxi232/Desktop/PROYECTO/tkinter-map-template/app/data/ubicaciones.json")
         self.marcadores = []
         self.imagenes = []
 
@@ -21,7 +21,7 @@ class ControladorPrincipal:
         
     def cargar_imagenes(self):
         for local in self.locales:
-            imagen = ImageTk.PhotoImage(Image.open(f"app/views/images/{local.imagen}").resize((200, 200)))
+            imagen = ImageTk.PhotoImage(Image.open(f"/Users/maxi232/Desktop/PROYECTO/tkinter-map-template/app/views/images/{local.imagen}").resize((200, 200)))
             self.imagenes.append(imagen)
 
     def cargar_marcadores(self):
